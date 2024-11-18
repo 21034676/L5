@@ -60,78 +60,78 @@
 // export default App;
 
 // ================== EXERCISE 2 ==================
-import React from 'react';
-import { View, Text, SectionList, StyleSheet, TouchableOpacity, StatusBar } from 'react-native';
-
-const datasource = [
-    {
-        data: [
-            { key: 'a' },
-            { key: 'e' },
-            { key: 'i' },
-            { key: 'o' },
-            { key: 'u' }
-        ],
-        title: "Vowels" , bgColor: 'skyBlue'
-    },
-    {
-        data: [
-            { key: 'b' },
-            { key: 'c' },
-            { key: 'd' },
-            { key: 'f' },
-            { key: 'g' },
-            { key: 'h' },
-            { key: 'j' },
-            { key: 'k' },
-            { key: 'l' },
-            { key: 'm' },
-            { key: 'n' },
-            { key: 'p' },
-            { key: 'q' },
-            { key: 'r' },
-            { key: 's' }
-        ],
-        title: "Consonants" , bgColor: 'khaki'
-    }
-];
-
-const styles = StyleSheet.create({
-    opacityStyle: {
-        borderWidth: 1
-    },
-    textStyle: {
-        fontSize: 15,
-        margin: 10,
-        textAlign: 'left'
-    },
-    headerText: {
-        fontSize: 20,
-        margin: 10,
-        textAlign: 'center',
-        fontWeight: 'bold'
-    },
-});
-
-const renderItem = ({item}) => (
-    <TouchableOpacity style={styles.opacityStyle}>
-        <Text style={styles.textStyle}>{item.key}</Text>
-    </TouchableOpacity>
-);
-
-const App = () => {
-    return (
-        <View style={{marginBottom: 50, margin: 10}}>
-            <StatusBar hidden={true}/>
-            <SectionList sections={datasource} renderItem={renderItem}
-                         renderSectionHeader={({section: {title, bgColor}}) =>(
-                             <Text style={[styles.headerText, {backgroundColor: bgColor}]}>{title}</Text>
-                         )}/>
-        </View>
-    );
-};
-
-export default App;
+// import React from 'react';
+// import { View, Text, SectionList, StyleSheet, TouchableOpacity, StatusBar } from 'react-native';
+//
+// const datasource = [
+//     {
+//         data: [
+//             { key: 'a' },
+//             { key: 'e' },
+//             { key: 'i' },
+//             { key: 'o' },
+//             { key: 'u' }
+//         ],
+//         title: "Vowels" , bgColor: 'skyBlue'
+//     },
+//     {
+//         data: [
+//             { key: 'b' },
+//             { key: 'c' },
+//             { key: 'd' },
+//             { key: 'f' },
+//             { key: 'g' },
+//             { key: 'h' },
+//             { key: 'j' },
+//             { key: 'k' },
+//             { key: 'l' },
+//             { key: 'm' },
+//             { key: 'n' },
+//             { key: 'p' },
+//             { key: 'q' },
+//             { key: 'r' },
+//             { key: 's' }
+//         ],
+//         title: "Consonants" , bgColor: 'khaki'
+//     }
+// ];
+//
+// const styles = StyleSheet.create({
+//     opacityStyle: {
+//         borderWidth: 1
+//     },
+//     textStyle: {
+//         fontSize: 15,
+//         margin: 10,
+//         textAlign: 'left'
+//     },
+//     headerText: {
+//         fontSize: 20,
+//         margin: 10,
+//         textAlign: 'center',
+//         fontWeight: 'bold'
+//     },
+// });
+//
+// const renderItem = ({item}) => (
+//     <TouchableOpacity style={styles.opacityStyle}>
+//         <Text style={styles.textStyle}>{item.key}</Text>
+//     </TouchableOpacity>
+// );
+//
+// const App = () => {
+//     return (
+//         <View style={{marginBottom: 50, margin: 10}}>
+//             <StatusBar hidden={true}/>
+//             <SectionList sections={datasource} renderItem={renderItem}
+//                          renderSectionHeader={({section: {title, bgColor}}) =>(
+//                              <Text style={[styles.headerText, {backgroundColor: bgColor}]}>{title}</Text>
+//                          )}/>
+//         </View>
+//     );
+// };
+//
+// export default App;
 
 
 
